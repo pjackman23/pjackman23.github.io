@@ -231,17 +231,18 @@ nav {
       border-right-width: 2px;
       margin-top: 1em;
       margin-bottom: 0;
-      padding-top: 1em;
+      padding-top: 0.7em;
       padding-bottom: 1em;
       padding-left: 1em;
-      height: 10em; }
-  /* line 233, C:/Users/Patrick/port_site/source/css/main.css.scss */
+      height: 10em;
+      line-height: 1.6em; }
+  /* line 234, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper .img-wrapper {
     display: inline-block;
     height: 5em;
     position: relative;
     vertical-align: bottom; }
-    /* line 239, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 240, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #about-wrapper .img-wrapper #about-img {
       position: absolute;
       bottom: 0px;
@@ -250,19 +251,19 @@ nav {
       width: 40px;
       vertical-align: bottom; }
 
-/* line 247, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 248, C:/Users/Patrick/port_site/source/css/main.css.scss */
 #work-wrapper {
   background: #12171a;
   background: rgba(18, 23, 26, 0.25); }
 
-/* line 251, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 252, C:/Users/Patrick/port_site/source/css/main.css.scss */
 #contact-wrapper {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
   position: relative; }
 
-/* line 256, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 257, C:/Users/Patrick/port_site/source/css/main.css.scss */
 footer {
   background: #182329;
   background: rgba(24, 35, 41, 0.9);
@@ -271,7 +272,7 @@ footer {
   bottom: 0px;
   height: 2em;
   width: 100%; }
-  /* line 262, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 263, C:/Users/Patrick/port_site/source/css/main.css.scss */
   footer p {
     color: #2d3940;
     float: right;
