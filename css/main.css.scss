@@ -126,19 +126,19 @@ nav {
 }
 
 .delay-three {
-	@include transition-delay(2s);
+	@include transition-delay(1.5s);
 }
 
 .delay-four {
-	@include transition-delay(2.5s);
+	@include transition-delay(2s);
 }
 
 .delay-five {
-	@include transition-delay(3s);
+	@include transition-delay(2.5s);
 }
 
 .delay-six {
-	@include transition-delay(3.5s);
+	@include transition-delay(3s);
 }
 
 .content-wrapper {
