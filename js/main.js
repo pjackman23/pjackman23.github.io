@@ -13,6 +13,10 @@ var Body = {
 				$(this).css('opacity', 1)
 			}
 		});
+	},
+
+	setMinWidth: function() {
+		$("body").css('min-width', parseInt(screen.width * 0.5) + "px");
 	}
 }
 
