@@ -16,7 +16,7 @@ html {
 
 /* line 29, C:/Users/Patrick/port_site/source/css/main.css.scss */
 html {
-  background: url(../img/proto_bg.png) no-repeat center center fixed;
+  background: url(../img/proto-bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,7 +31,7 @@ body {
 /* line 43, C:/Users/Patrick/port_site/source/css/main.css.scss */
 nav {
   background: #182329;
-  background: rgba(24, 35, 41, 0.9);
+  background: rgba(24, 35, 41, 0.95);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -207,25 +207,26 @@ nav {
     #home-wrapper #btm-div #home-img {
       height: 40px;
       width: 40px;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: top; }
 
-/* line 215, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 216, C:/Users/Patrick/port_site/source/css/main.css.scss */
 #about-wrapper {
   position: relative; }
-  /* line 218, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 219, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper p {
     margin-top: 0;
     margin-bottom: 0.5em;
     font: lighter 1.5em Segoe UI, sans-serif; }
-  /* line 223, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 224, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper #about-p {
     width: 90%; }
-  /* line 227, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 228, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper h2 {
     margin-top: 0.5px;
     margin-bottom: 0;
     font: lighter 3.25em Segoe UI, sans-serif; }
-  /* line 233, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 234, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper .qual-wrapper {
     margin-top: 1em;
     margin-right: 1em;
@@ -234,19 +235,19 @@ nav {
     min-width: 365px;
     vertical-align: top;
     width: 27.5%; }
-    /* line 241, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 242, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #about-wrapper .qual-wrapper p {
       height: 10em;
       line-height: 1.6em;
       margin: 0px; }
-  /* line 248, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 249, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #about-wrapper .img-wrapper {
     height: 10em;
     width: 40px;
     display: inline-block;
     position: relative;
     vertical-align: bottom; }
-    /* line 255, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 256, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #about-wrapper .img-wrapper #about-img {
       position: absolute;
       bottom: 0px;
@@ -255,67 +256,97 @@ nav {
       width: 40px;
       vertical-align: bottom; }
 
-/* line 264, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 265, C:/Users/Patrick/port_site/source/css/main.css.scss */
 #work-wrapper {
   background: #12171a;
   background: rgba(18, 23, 26, 0.2); }
-  /* line 267, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 268, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #work-wrapper .exp-wrapper {
     width: 100%;
     margin-bottom: 2em; }
-    /* line 271, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 272, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #work-wrapper .exp-wrapper p {
-      padding: 0 2em 1em 0;
+      margin: 0 1.5em 0 0;
+      padding: 0 0 1em;
       display: inline-block;
       font: lighter 1.5em Segoe UI, sans-serif;
-      margin: 0px;
       min-width: 500px;
       vertical-align: top;
       width: 50%; }
-    /* line 282, C:/Users/Patrick/port_site/source/css/main.css.scss */
+      /* line 282, C:/Users/Patrick/port_site/source/css/main.css.scss */
+      #work-wrapper .exp-wrapper p span {
+        color: #3a82a6; }
+    /* line 287, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #work-wrapper .exp-wrapper a {
       width: 47.5%;
       display: inline-block;
       min-width: 475px;
       outline: none; }
-    /* line 291, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 296, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #work-wrapper .exp-wrapper a:active img {
-      padding: 1px; }
-    /* line 297, C:/Users/Patrick/port_site/source/css/main.css.scss */
+      padding: 0 1px;
+      margin: 1px 0; }
+    /* line 303, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #work-wrapper .exp-wrapper a:hover img {
       opacity: 1; }
-    /* line 302, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    /* line 308, C:/Users/Patrick/port_site/source/css/main.css.scss */
     #work-wrapper .exp-wrapper img {
       height: auto;
       width: 100%;
       opacity: 0.85; }
-    /* line 308, C:/Users/Patrick/port_site/source/css/main.css.scss */
-    #work-wrapper .exp-wrapper .bigger-p-span {
-      font: lighter 1.5em Segoe UI, sans-serif; }
-  /* line 313, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  /* line 315, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #work-wrapper #last-exp-wrapper {
     margin-bottom: 0px; }
 
-/* line 319, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 321, C:/Users/Patrick/port_site/source/css/main.css.scss */
 #contact-wrapper {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
   position: relative; }
+  /* line 326, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  #contact-wrapper .content-inner p {
+    margin: 0 0 2em;
+    font: lighter 1.5em Segoe UI, sans-serif; }
+  /* line 331, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  #contact-wrapper .content-inner .contact-item {
+    margin: 1em 0; }
+    /* line 334, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    #contact-wrapper .content-inner .contact-item p {
+      display: inline-block;
+      margin: 0px; }
+    /* line 338, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    #contact-wrapper .content-inner .contact-item img {
+      height: 1em;
+      width: 1em;
+      display: inline-block;
+      margin-right: 1em; }
+  /* line 346, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  #contact-wrapper .content-inner #closing {
+    margin: 5em 0 0; }
+    /* line 349, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    #contact-wrapper .content-inner #closing p {
+      display: inline-block;
+      margin-right: 1em; }
+    /* line 354, C:/Users/Patrick/port_site/source/css/main.css.scss */
+    #contact-wrapper .content-inner #closing img {
+      height: 2em;
+      width: 2em;
+      display: inline-block; }
 
-/* line 324, C:/Users/Patrick/port_site/source/css/main.css.scss */
+/* line 363, C:/Users/Patrick/port_site/source/css/main.css.scss */
 footer {
   background: #182329;
-  background: rgba(24, 35, 41, 0.9);
-  padding: 0 5em 0 0;
+  background: rgba(24, 35, 41, 0.95);
+  margin: 7em 0 0;
   position: absolute;
-  bottom: 0px;
+  right: 0px;
   height: 2em;
-  width: 100%; }
-  /* line 330, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  width: 50%; }
+  /* line 369, C:/Users/Patrick/port_site/source/css/main.css.scss */
   footer p {
+    margin: 0 0 0 2em;
     color: #2d3940;
-    float: right;
     font-weight: normal;
     line-height: 2em;
-    margin: 0px; }
+    min-width: 400px; }
