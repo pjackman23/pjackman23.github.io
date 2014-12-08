@@ -142,10 +142,6 @@ var Work = {
     animateMainImg: function(directory) {
     	$("#overlay-main-img").css('opacity', 0);
 	    setTimeout(function(){ document.getElementById('overlay-main-img').src = "../img/" + directory + "/" + Work.index + ".jpg"; }, 250); //allow animation to breathe
-	    
-	    document.getElementById('#overlay-main-img').onclick = function () {
-	    	$("#overlay-main-img").css('opacity', 1);
-	    };
     },
 
 	displayOverlay: function(directory, overlayHeader, numImages) {
@@ -253,6 +249,11 @@ var Work = {
 		document.getElementById('right-arrow-a').onmouseup = function () {
 		    document.getElementById('right-arrow-img').src = "../img/right-arrow-invert.png";
 		};
+
+		//overlay main image
+		document.getElementById('overlay-main-img').onload = function () {
+	    	$("#overlay-main-img").css('opacity', 1);
+	    };
 	}
 }
 
