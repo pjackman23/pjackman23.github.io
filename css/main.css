@@ -462,3 +462,25 @@ footer {
     font-weight: normal;
     line-height: 2em;
     min-width: 400px; }
+
+/* line 499, C:/Users/Patrick/port_site/source/css/main.css.scss */
+#mobile-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #182329;
+  min-width: 500px;
+  padding: 2em;
+  visibility: visible;
+  z-index: 5000; }
+  /* line 509, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  #mobile-overlay .center {
+    display: block;
+    margin: auto; }
+  /* line 514, C:/Users/Patrick/port_site/source/css/main.css.scss */
+  #mobile-overlay p {
+    font: lighter 1.25em Segoe UI, sans-serif;
+    padding-top: 1em;
+    text-align: center; }
