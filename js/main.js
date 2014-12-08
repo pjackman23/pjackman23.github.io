@@ -262,6 +262,7 @@ $(document).ready(function() {
 
 	Body.resizeDivs();
 	Body.setMinWidth();
+	Body.detectMobileDevice();
 
 	Home.resizeElements();
 

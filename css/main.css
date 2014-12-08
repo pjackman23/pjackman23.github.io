@@ -473,7 +473,7 @@ footer {
   background-color: #182329;
   min-width: 500px;
   padding: 2em;
-  visibility: visible;
+  visibility: hidden;
   z-index: 5000; }
   /* line 509, C:/Users/Patrick/port_site/source/css/main.css.scss */
   #mobile-overlay .center {
