@@ -10,7 +10,7 @@ var Body = {
 
 			var topOfWindow = $(window).scrollTop();
 			if (imagePos < topOfWindow + $(window).height()) {
-				$(this).css('opacity', 1)
+				$(this).css('opacity', 1);
 			}
 		});
 	},
@@ -142,7 +142,7 @@ var Work = {
     animateMainImg: function(directory) {
     	$("#overlay-main-img").css('opacity', 0);
 	    setTimeout(function(){ document.getElementById('overlay-main-img').src = "../img/" + directory + "/" + Work.index + ".jpg"; }, 250); //allow animation to breathe
-	    setTimeout(function(){$("#overlay-main-img").css('opacity', 1);}, 500);
+	    setTimeout(function(){$("#overlay-main-img").css('opacity', 1);}, 1000);
     },
 
 	displayOverlay: function(directory, overlayHeader, numImages) {
