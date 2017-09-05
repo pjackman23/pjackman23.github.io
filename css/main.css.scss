@@ -1,0 +1,269 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+//vars
+$blue-color: #3a82a6;
+$green-color: #43b32d;
+$orange-color: #e67339;
+$purple-color: #8c4c99;
+$white-color: #FFFFFF;
+
+$nav-color: #182329;
+$nav-border-color: #242e33;
+$nav-dark-hover-color: #2d3940;
+$nav-img-color: #12171a;
+$nav-light-hover-color: #285a73;
+
+$nav-opacity: 0.9;
+$nav-border-thickness: 2px;
+
+$font-stack: Segoe UI, sans-serif;
+
+//mixins
+@mixin background-opacity($color, $opacity: 1) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+//core scss
+html { 
+  background: url(../img/proto_bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	color: $white-color;
+	font: lighter 1em $font-stack;
+	min-width: 700px;
+}
+
+nav {
+	@include background-opacity($nav-color, $nav-opacity);
+	@include position(fixed, 0px null null 0px);
+	@include size(100% (75px + $nav-border-thickness));
+
+	border-bottom: $nav-border-thickness solid $blue-color;
+	min-width: 40em;
+	z-index: 1000;
+
+	ul {
+		@include margin(0 5em 0 5em);
+
+		padding: 0px;
+	
+		li {
+			@include size(15% 75px);
+			
+			float: left;
+			border-right: 1px solid $nav-border-color;
+			line-height: 75px;
+			min-width: 8em;
+			text-align: center;
+
+			.nav-a {
+				@include size(100% 75px);
+				@include transition-property(background);
+				@include transition-duration(1s);
+
+				color: $white-color;
+				display: inline-block;
+				outline: none;
+				text-decoration: none;
+				text-align: center;
+				font-size: 1.2em;
+
+				#nav-img { 
+					@include size(65px 75px);
+					@include padding(5px 0px 5px 0px);			
+				}
+			}
+
+			.nav-a:hover {
+				@include transition-property(background);
+				@include transition-duration(0.25s);
+
+				background: $nav-light-hover-color;
+				font-size: 1.225em;
+			}
+			.nav-a:active {
+				background: $orange-color;
+			}
+
+			#nav-img-a:hover {
+				background: $nav-dark-hover-color;
+			}
+			#nav-img-a:active {
+				background: #3e5059;
+			}
+		}
+		li:first-child {
+			background: $nav-img-color;
+			border-left: 1px solid $nav-border-color;
+			min-width: 6em;
+			width: 10%;
+		}
+	}
+}
+
+.appear, .scroll-appear {
+	@include transition-property(opacity);
+	@include transition-duration(1.5s);
+	@include transition-timing-function(ease-in);
+	@include transition-delay(0s);
+	
+	opacity: 0;
+}
+
+.delay-one {
+	@include transition-delay(0.5s);
+}
+
+.delay-two {
+	@include transition-delay(1s);
+}
+
+.delay-three {
+	@include transition-delay(1.5s);
+}
+
+.delay-four {
+	@include transition-delay(2s);
+}
+
+.delay-five {
+	@include transition-delay(2.5s);
+}
+
+.delay-six {
+	@include transition-delay(3s);
+}
+
+.content-wrapper {
+	@include padding(100px 5em 2em 5em);
+	@include size(100% 100%);
+
+	min-width: 700px;
+
+	h1 {
+		font: lighter 5em $font-stack;
+		margin:0px;
+	}
+
+	h3 {
+		@include margin(0.4em 0px 0.4em 0px);
+
+		font: lighter 1.5em $font-stack;
+	}
+
+	.color-span {
+		color: $orange-color;
+	}
+
+	.content-inner{
+		@include padding(0px 5em 0px 5em);
+	}
+}
+
+#home-wrapper {
+	@include background-opacity($nav-img-color, 0.25);
+
+	.h1-resize {
+		line-height: 100%;
+	}
+
+	#btm-div {
+		@include margin(7em null null null);
+
+		h3 {
+			@include margin(0px 1em 0px 0px);
+			display: inline-block;
+		}
+
+		#home-img {
+			@include size(40px 40px);
+
+			display: inline-block;
+		}
+	}
+}
+
+#about-wrapper {
+	position: relative;
+
+	p {
+		font: lighter 1.5em $font-stack;
+	}
+
+	#about-p {
+		width: 90%;
+	}
+
+	h2 {
+		@include margin(0.5em null 0.5em null);
+		font: lighter 3.5em $font-stack;
+	}
+
+	.qual-wrapper{
+		display: inline-block;
+		margin-right: 1em;
+		min-width: 350px;
+		vertical-align: top;
+		width: 25%;
+
+		h3 {
+			color: $orange-color;
+			font: lighter 2em $font-stack;
+			margin: 0px;
+		}
+
+		p {
+			@include background-opacity($orange-color, 0.05);
+			@include border-color($orange-color $orange-color null null);
+			@include border-style(solid solid null null);
+			@include border-width(2px 2px null null);
+			@include margin(1em null 0 null);
+			@include padding(1em null 1em 1em);
+
+			height: 10em;
+		}
+	}
+	.img-wrapper{
+		display: inline-block;
+		height: 5em;
+		position: relative;
+		vertical-align: bottom;
+
+		#about-img{
+			@include position(absolute, null null 0px 0px);
+			@include size(40px 40px);
+			vertical-align: bottom;
+		}
+	}
+}
+
+#work-wrapper {
+	@include background-opacity($nav-img-color, 0.25);
+}
+
+#contact-wrapper {
+	@include padding(null 0px 0px 0px);
+	position: relative;
+}
+
+footer {
+	@include background-opacity($nav-color, $nav-opacity);
+	@include padding(0 5em 0 0);
+	@include position(absolute, null null 0px null);
+	@include size(100% 2em);
+
+	p{
+		color: $nav-dark-hover-color;
+		float: right;
+		font-weight: normal;
+		line-height: 2em;
+		margin: 0px;
+	}
+}
