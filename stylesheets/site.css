@@ -5983,7 +5983,14 @@ ul, menu, dir {
 
 .modal-content {
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  background-image: url(/images/grain.png); }
+
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: inherit !important; }
+  body.modal-open .modal {
+    padding-right: 0 !important; }
 
 ::-moz-selection {
   /* Code for Firefox */
